@@ -1,0 +1,179 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Open Sans';
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul.top-link li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+ul.top-link{
+    position: fixed;
+    padding: 0px;
+}
+
+ul.question{
+    padding: 0px;
+    list-style-type: none;
+}
+
+.question div.name{
+    width: 100px;
+    float: left;
+}
+.question div.input{
+    padding-left: 5px;
+    float: left;
+}
+
+
+.img-style{
+    width:100%;
+    height:100%
+}
+
+.school-temp-img{
+    width: 150px;
+}
+
+.school-info{
+    vertical-align: top;
+}
+
+.school-temp-intro-img{
+    float: left;
+    border: 0px solid black;
+    position: relative;
+}
+
+.school-temp-intro-text{
+    float: left;
+    border: 0px solid black;
+    position: relative;
+    vertical-align: top;
+}
+
+.va{
+    vertical-align: top;
+}
+
+.npm{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.button{
+    width: 6em;
+    height: 20px;
+}
+
+.space{
+    margin-left: 10px;
+    padding: 0px 0px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.left-text{
+    text-align: left;
+}
+
+.box-padding{
+    padding: 0px 10px;
+}
+
+.row.box-padding >div{
+    padding: 0px 10px;
+}
+
+.navbar.navbar-default{
+    margin: 0px;
+}
+
+/* Left tab */
+.tabs-left .nav-tabs{
+    float: left;
+    margin-right: 19px;
+    border-right: 1px solid #ddd;
+}
+.tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
+    float: none;
+}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+}
+.tabs-left > .nav-tabs > li > a {
+    margin-right: -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+    min-width: 74px;
+    margin-bottom: 3px;
+}
+
+.over-flow{
+    overflow: scroll;
+    width: 100%;
+    height: 80%;
+}
+
+.bottom-padding{
+    padding-bottom: 10px;
+}
+
+.size-relational{
+    font-size: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.tips{
+    font-size: 100%;
+    color: darkgray;
+}
+
+.info-box{
+    width: 30%;
+    height: 15%;
+    overflow: visible;
+    position: absolute;
+    right: 1%;
+}
+
+.school-info-table{
+    width: 65%;
+    height: 80%;
+}
+
+/*.school-info-table-tr{*/
+    /*width: 30%;*/
+/*}*/
+
+.line{
+    border-left:1px black solid;
+    position:absolute;
+}
+
+.left-pad{
+    padding-left: 10px;
+}
+
+.np{
+    padding: 0%;
+}
+
+.half{
+    width: 50%;
+}

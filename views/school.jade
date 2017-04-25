@@ -1,0 +1,132 @@
+extends head
+
+block content
+    div
+        nav(class='navbar navbar-default')
+            div(class='container-fluid')
+                div(class='navbar-header')
+                    button(class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+                        span(class='sr-only')
+                            Toggle nacigation
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                    a(class='navbar-brand', href='/index') 主页
+                div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+                    ul(class='nav navbar-nav')
+                        li: a(href='/information') 留学须知
+                        li: a(href='/schoolinfo') 学校信息
+                        li: a(href='/application') 如何申请
+                        li: a(href='/question') 疑难解答
+    each val in database
+        - var name = val.name;
+        - var name_i = val.name_init;
+        - var genlink = val.website_gen;
+        - var pic = name_i + ".png";
+        - var addr = val.address;
+        - var tel = val.tel;
+        - var gt = val.gen_tui_fee;
+        - var tfee = val.fee_tuition;
+        - var fee_onc = val.fee_onc;
+        - var fee_offc = val.fee_offc;
+        - var lang_req = val.lang_req;
+        - var lang_req_local = val.lang_req_local;
+        - var webRes = val.website_residence;
+        - var webGen = val.website_gen;
+        - var webFee = val.website_fee;
+        - var webReq = val.website_req;
+        - var email = val.email;
+
+        br
+        div
+            ul(class='nav nav-tabs' role='tablist')
+                li(role='presentation' class='active'): a(href='#Gen' aria-controls='1' role='tab' data-toggle='tab') 录取要求
+                li(role='presentation'): a(href='#Fee' aria-controls='2' role='tab' data-toggle='tab') 学费
+                li(role='presentation'): a(href='#Res-Fee' aria-controls='3' role='tab' data-toggle='tab') 住宿费
+                li(role='presentation'): a(href='#AdI' aria-controls='4' role='tab' data-toggle='tab') 其他信息
+                li(role='presentation'): a(href='#App' aria-controls='5' role='tab' data-toggle='tab') 申请此学校
+
+            table(class='info-box')
+                tr
+                    td(class='school-temp-intro-img')
+                        a(href='#{genlink}')
+                            img(src='../images/#{pic}' alt='#{name_i}' class='school-temp-img')
+                        p(class='npm center-text tips') 点击图片进入学校主页
+                    td(class='npm va')
+                        h4 !{name}<br>
+                        table(class='school-temp-intro-text')
+                            tr
+                                td(class='npm va')
+                                    p 地址: <br>
+                                td
+                                    p !{addr}
+                            tr
+                                td(class='npm va')
+                                    p Email: <br>
+                                td
+                                    p !{tel}
+                            tr
+                                td(class='npm va')
+                                    p 专业学费:
+                                td
+                                    p !{gt}
+
+        div(class='tab-content space over-flow caption')
+            div(role='tabpanel' class='tab-pane active' id='Gen')
+                table(class='school-info-table')
+                    tr(class='center-text va')
+                        td(class='np half')
+                            h4 留学生要求
+                        td(class='np')
+                            div(class='line')
+                                hr
+                        td(class='np half')
+                            h4 本地生要求(移民)
+
+                    tr(class='left-text va')
+                        td(class='np npm')
+                            p !{lang_req}
+                        td
+
+                        td(class='left-pad')
+                            p !{lang_req_local}
+
+            div(role='tabpanel' class='tab-pane' id='Fee')
+                table(class='school-info-table')
+                    tr(class='center-text va')
+                        td(class='np half')
+                            h4 留学生学费
+                        td(class='np')
+                            div(class='line')
+                                hr
+                        td(class='np half')
+                            h4 本地生学费
+
+                    tr(class='left-text va')
+                        td
+                            p !{tfee}
+                        td
+
+                        td(class='left-pad')
+                            p !{webFee}
+
+            div(role='tabpanel' class='tab-pane' id='Res-Fee')
+                h4 住宿费等
+                p
+                | asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>asdfasd<br>
+                | !{fee_on_cam}<br>
+                | !{webRes}
+                | !{fee_off_cam}<br>
+            div(role='tabpanel' class='tab-pane' id='AdI')
+                h4 额外信息
+
+            div(role='tabpanel' class='tab-pane' id='App')
+                a(href='#{resLink}')
+                    h4 用本学校的申请表
+                h4(class='npm') 步骤
+                p
+                    | <b>1</b> <br>
+                    | <b>2</b> <br>
+                    | <b>3</b> <br>
+                a(href='/application')
+                    h4 用网页申请多所大学

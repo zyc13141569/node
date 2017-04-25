@@ -1,0 +1,49 @@
+//Created by MH on 2015-09-14.
+extends head
+
+block content
+   div
+      nav(class='navbar navbar-default')
+         div(class='container-fluid')
+            div(class='navbar-header')
+               button(class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+                  span(class='sr-only')
+                     Toggle nacigation
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+               a(class='navbar-brand', href='/index') 主页
+            div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+               ul(class='nav navbar-nav')
+                  li: a(href='/information') 留学须知
+                  li: a(href='/schoolinfo') 学校信息
+                  li: a(href='/application') 如何申请
+                  li: a(href='/question') 疑难解答
+   br
+   div(class='bottom-padding')
+      ul(id='school-table' class='nav nav-tabs' role='tablist')
+         li(role='presentation' class='active'): a(href='' id='university-tab' role='tab' data-toggle='tab' aria-controls='university' aria-expanded='true') 大学
+            br
+         //li(role='presentation' class='disabled'): a(href='') 学院
+
+   div(class='tab-content over-flow' id='school-content')
+      div(role='tabpane' class='tab-pane fade active in' id='university' aria-labelledby='university-tab')
+         div(class='space')
+            br
+            div(class='row box-padding')
+               each val in database
+                  - var name = val.name_init;
+                  - var pic = name+".png";
+                  - var ts = val.toefl;
+                  - var is = val.ielts;
+                  - var gt = val.gen_tuition_fee;
+                  div(id='template size-relational' class='col-xs-3 col-sm-3 col-md-2 col-lg-2')
+                     div(class='thumbnail')
+                        a(href='/school/' + name)
+                           img(src='./images/#{pic}' alt='#{name}')
+                           div(class='caption center-text size-relational')
+                              h4(class='content-margin') !{val.name}
+                              p(class='content-margin')
+                                 | 托福: !{val.toefl} 雅思: !{val.ielts}<br>
+                                 | 学费: !{val.gen_tuition_fee}
+

@@ -1,0 +1,100 @@
+//Created by MH on 2015-09-14.
+extends head
+
+block content
+   div
+      nav(class='navbar navbar-default')
+         div(class='container-fluid')
+            div(class='navbar-header')
+               button(class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+                  span(class='sr-only')
+                     Toggle nacigation
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+               a(class='navbar-brand', href='/index') 主页
+            div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+               ul(class='nav navbar-nav')
+                  li: a(href='/information') 留学须知
+                  li: a(href='/schoolinfo') 学校信息
+                  li: a(href='/application') 如何申请
+                  li: a(href='/question') 疑难解答
+   br
+   div
+      ul(class='nav nav-tabs' role='tablist')
+         li(role='presentation' class='active'): a(href='#1' aria-controls='1' role='tab' data-toggle='tab') 申请留学前
+         li(role='presentation'): a(href='#2' aria-controls='profile' role='tab' data-toggle='tab') 录取后
+         li(role='presentation'): a(href='#3' aria-controls='message' role='tab' data-toggle='tab') 终点加拿大
+
+   div(class='over-flow space tab-content')
+      div(role='tabpanel' class='tab-pane active' id='1')
+         h3 申请留学前
+         p.
+            'sdfadsfasd<br>afsdfadsfadsfa<br>sdfasdfasdfadsfasdfa<br>sdfasdfadsfasdf'<br>'
+            sdfadsfasdafsdfadsfadsfasdfasdfasdf<br>adsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsf<br>adsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfa<br>dsfasdfasdfasdfa<br>dsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br><br>
+            'sdfadsfas<br>dafsdfadsfad<br>sfasdfas<br>dfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfads<br>fasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdf<br>adsfadsfasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsf<br>asdafsdfads<br>fadsfasdfasdfas<br>dfadsfasdfasdfasdf<br>adsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfad<br>sfads<br>fasdf<br>asdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfads<br>fasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfa<br>sdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsd<br>fadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasd<br>afsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdf<br>adsfasdaf<br>sdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfas<br>dfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsf<br>asdf'<br>
+
+      div(role='tabpanel' class='tab-pane' id='2')
+         h3 录取后
+         p.
+            'sdfadsfasd<br>afsdfadsfadsfa<br>sdfasdfasdfadsfasdfa<br>sdfasdfadsfasdf'<br>'
+            sdfadsfasdafsdfadsfadsfasdfasdfasdf<br>adsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsf<br>adsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfa<br>dsfasdfasdfasdfa<br>dsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br><br>
+            'sdfadsfas<br>dafsdfadsfad<br>sfasdfas<br>dfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfads<br>fasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdf<br>adsfadsfasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsf<br>asdafsdfads<br>fadsfasdfasdfas<br>dfadsfasdfasdfasdf<br>adsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfad<br>sfads<br>fasdf<br>asdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfads<br>fasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfa<br>sdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsd<br>fadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasd<br>afsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdf<br>adsfasdaf<br>sdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfas<br>dfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsf<br>asdf'<br>
+
+      div(role='tabpanel' class='tab-pane' id='3')
+         h3 终点加拿大
+         p.
+            'sdfadsfasd<br>afsdfadsfadsfa<br>sdfasdfasdfadsfasdfa<br>sdfasdfadsfasdf'<br>'
+            sdfadsfasdafsdfadsfadsfasdfasdfasdf<br>adsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsf<br>adsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfa<br>dsfasdfasdfasdfa<br>dsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br><br>
+            'sdfadsfas<br>dafsdfadsfad<br>sfasdfas<br>dfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfads<br>fasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdf<br>adsfadsfasdfasdfasdfadsfas<br>dfasdfasdfadsfasdf'<br>
+            'sdfadsf<br>asdafsdfads<br>fadsfasdfasdfas<br>dfadsfasdfasdfasdf<br>adsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfad<br>sfads<br>fasdf<br>asdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfads<br>fasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfa<br>sdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsd<br>fadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasd<br>afsdfadsfadsfasdfasdfasdfadsf<br>asdfasdfasdfadsfasdf'<br>
+            'sdf<br>adsfasdaf<br>sdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfas<br>dfadsfasdfasdfasdfadsfasdf'<br>
+            'sdfadsfasdafsdfadsfadsfasdfasdfasdfadsfasdfasdfasdfadsf<br>asdf'<br>

@@ -1,0 +1,74 @@
+//Created by MH on 2015-09-14.
+extends head
+block content
+   div
+      nav(class='navbar navbar-default')
+         div(class='container-fluid')
+            div(class='navbar-header')
+               button(class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+                  span(class='sr-only')
+                     Toggle nacigation
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+                  span(class='icon-bar')
+               a(class='navbar-brand', href='/index') 主页
+            div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+               ul(class='nav navbar-nav')
+                  li: a(href='/information') 留学须知
+                  li: a(href='/schoolinfo') 学校信息
+                  li: a(href='/application') 如何申请
+                  li: a(href='/question') 疑难解答
+
+   div(class='tabbable tabs-left' style='position: relative; height: 100%')
+      ul(class='nav nav-tabs' style='height:100%')
+         li(class='active'): a(href='#lA' data-toggle='tab') 网站申请
+         li: a(href='#lB' data-toggle='tab') 学校申请
+
+      div(class='tab-content')
+         div(class='tab-pane active' id='lA')
+            table
+               tr
+                  td(style='float: left')
+                     h3 allalalallalala
+                     p.
+                        sdfjadslfhaksljdfh
+                        skldajfdlshflaksdhf
+                        asdkljfhlaksdjfhlkasdfh
+                        klasdjfhlksadjfhlasdjfh
+                        aksdfhlkadjsfhlsakdjhf
+                        kalsjdfhlaskdjfhlaskdjfh'
+                        sdalkjfhsdlkajfhlkasdhflas
+                        alskdfjhlasdkfjhlkasdfh
+                        sdakjfhalskdjfhlsa
+                        dslkjfhalskd
+
+         div(class='tab-pane over-flow' id='lB')
+            div(role='tabpane' class='tab-pane fade active in' id='university' aria-labelledby='university-tab')
+               div(class='space')
+                  br
+                  div(class='row box-padding')
+                     each val in database
+                        - var name = val.Name_init;
+                        - var pic = name+".png";
+                        div(id='template size-relational' class='col-xs-3 col-sm-3 col-md-2 col-lg-2')
+                           div(class='thumbnail')
+                              a(href='/school/' + name)
+                                 img(src='./images/#{pic}' alt='#{name}')
+                                 div(class='caption center-text size-relational')
+                                    h4(class='content-margin') !{val.Name}
+                                    p(class='content-margin')
+                                       | !{val.Tel}<br>
+                                       | !{val.City}<br>
+                                       | !{val.Gen_Tuition_Fee}
+
+         div(class='btn-toolbar' role='toolbar' aria-label='...')
+            div(class='btn-group' role='group' aria-label='...')
+            div(class='btn-group' role='group' aria-label='...')
+            div(class='btn-group' role='group' aria-label='...')
+
+         //div(class='bottom-button')
+         //   ul(class='pager' id='changeImage')
+         //      li(class='previous'): a(href='#')
+         //         span(aria-hidden='true') pre
+         //      li(class='next'): a(href='#')
+         //         span(aria-hidden='true') next
